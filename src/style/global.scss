@@ -1,0 +1,198 @@
+@import "~bootstrap/scss/bootstrap";
+//
+@font-face {
+  font-family: CircularStdBook;
+  src: url(../assets/fonts/CircularStdBook.ttf);
+}
+body{
+  font-family: CircularStdBook;
+  background: #f8f9fd;
+}
+.feed_new{
+  .position-sticky{
+    position: sticky;
+    top: 45px;
+  }
+  .cardsFreed{
+    .card{
+      border: none;
+      border-radius: 15px;
+      .avatar {
+        cursor: pointer;
+        width: 2.4rem;
+        height: 2.4rem;
+        border-radius: 10px;
+        transition: 0.1s;
+        &:hover{
+          transition: 0.1s;
+          border-radius: 10px;
+        }
+        img {
+          width: 2.4rem;
+          height: 2.4rem;
+          object-fit: cover;
+          object-position: top;
+          border-radius: 10px;
+          transition: 0.1s;
+        }
+      }
+      .nameUser{
+        .nameText{
+          font-size: 14px;
+        }
+        .timeData{
+          font-size: 10px;
+          color: rgba(0, 0, 0, 0.399);
+        }
+      }
+    }
+    .cardButtonsMenu{
+      button{
+        text-align: left !important;
+        font-size: 14px;
+        height: 40px;
+        padding-left: 7px !important;
+        background: none !important;
+        border: none;
+        color: rgba(17, 17, 17, 0.726);
+        &:hover{
+          color: #0d6efd;
+        }
+        .icon-btn{
+          font-size: 18px;
+          margin-top: -5px;
+          margin-right: 10px;
+        }
+      }
+    }
+    button.active{
+      color: #0d6efd;
+    }
+  }
+  section{
+    .container{
+      .row{
+        .col-lg-5{
+          .card{
+            border: none;
+            border-radius: 15px;
+            .card-body{
+              .dropdown{
+                button {
+                  background: none;
+                  color: rgba(17, 17, 17, 0.244);
+                  border: none;
+                  font-size: 22px;
+                  padding: 0px;
+                  &:hover{
+                    color: rgb(17, 17, 17);
+                  }
+                }
+                .dropdown-menu{
+                  border-radius: 15px;
+                  font-size: 14px;
+                  border: none;
+                }
+              }
+              img{
+                border-radius: 15px;
+              }
+              .text-post{
+                font-size: 15px;
+                color: rgb(0, 3, 56);
+              }
+              .avatar {
+                cursor: pointer;
+                width: 2.4rem;
+                height: 2.4rem;
+                border-radius: 10px;
+                transition: 0.1s;
+                &:hover{
+                  transition: 0.1s;
+                  border-radius: 10px;
+                }
+                img {
+                  width: 2.4rem;
+                  height: 2.4rem;
+                  object-fit: cover;
+                  object-position: top;
+                  border-radius: 10px;
+                  transition: 0.1s;
+                }
+              }
+              .Liked{
+                .avatar {
+                  width: 1.5rem;
+                  height: 1.5rem;
+                  border-radius: 100px;
+                  transition: 0.1s;
+                  margin-left: -10px;
+                  img {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    border-radius: 100px;
+                  }
+                }
+              }
+            }
+            .nameUser{
+              .nameText{
+                font-size: 15px;
+              }
+              .timeData{
+                font-size: 11px;
+                color: rgba(0, 0, 0, 0.399);
+              }
+            }
+            .buttons-bottom{
+              Button{
+                padding: 0px;
+                font-size: 24px;
+                background: none !important;
+                border: none !important;
+                color: black;
+                opacity: 0.2;
+              }
+              .HiHeart{
+                color: red !important;
+                opacity: 1;
+              }
+            }
+            .form-coment{
+              .input-group{
+                input{
+                  border: none !important;
+                  padding: 0px;
+                  font-size: 14px;
+                  box-shadow: none;
+                }
+                .input-group-text{
+                  border: none !important;
+                  padding: 0px;
+                  font-size: 15px;
+                  background: none;
+                }
+                .input-group-text{
+                  font-size: 13px;
+                  a{
+                    text-decoration: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .dropdown-toggle::after {
+    display: none;
+  }
+ 
+}
+.font-13{
+  font-size: 13px;
+}
+.font-14{
+  font-size: 14px;
+}
