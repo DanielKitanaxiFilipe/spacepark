@@ -1,0 +1,14 @@
+{
+  "request":[
+    {
+      "id": 1,
+      "avatar": "https://i.pinimg.com/564x/1f/84/86/1f84864c727a6f0c0c3ab4f202dc099d.jpg",
+      "nomeUser": "Maura Paulo"
+    },
+    {
+      "id": 1,
+      "avatar": "https://i.pinimg.com/564x/76/a7/c8/76a7c845db87068d0b2e3ced1a3a1678.jpg",
+      "nomeUser": "Marcela Pereira"
+    }
+  ]
+}

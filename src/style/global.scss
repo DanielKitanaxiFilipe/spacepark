@@ -11,7 +11,7 @@ body{
 .feed_new{
   .position-sticky{
     position: sticky;
-    top: 45px;
+    top: 90px;
   }
   .cardsFreed{
     .card{
@@ -185,6 +185,43 @@ body{
       }
     }
   }
+  .requests{
+    .card{
+      border: none;
+      border-radius: 15px;
+      .btn-meS{
+        height: 35px;
+        padding-left: 25px;
+        font-size: 13px;
+        padding-right: 25px;
+        border-radius: 10px;
+      }
+      .avatar {
+        cursor: pointer;
+        width: 2.4rem;
+        height: 2.4rem;
+        border-radius: 10px;
+        transition: 0.1s;
+        &:hover{
+          transition: 0.1s;
+          border-radius: 10px;
+        }
+        img {
+          width: 2.4rem;
+          height: 2.4rem;
+          object-fit: cover;
+          object-position: top;
+          border-radius: 10px;
+          transition: 0.1s;
+        }
+      }
+      .nameUser{
+        .nameText{
+          font-size: 14px;
+        }
+      }
+    }
+  }
   .dropdown-toggle::after {
     display: none;
   }
@@ -195,4 +232,121 @@ body{
 }
 .font-14{
   font-size: 14px;
+}
+.opacity-05{
+  opacity: 0.5;
+}
+.navbar{
+  background: #fff;
+  height: 70px;
+  button{
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  .container{
+    img{
+      width: 120px;
+    }
+    .input-group{
+      background:#f8f9fd;
+      border-radius: 10px;
+      input{
+        border: none;
+        background: none;
+        outline: none;
+        box-shadow: none;
+        font-size: 14px;
+      }
+      span{
+        border: none;
+        background: none;
+        outline: none;
+        box-shadow: none;
+      }
+    }
+    .dropdown{
+      .dropdown-menu{
+        border-radius: 15px;
+        border: none;
+        font-size: 14px;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.021)!important;
+      }
+      button{
+        padding: 0px;
+        border: none;
+        background: none !important;
+        .avatar {
+          cursor: pointer;
+          width: 2.4rem;
+          height: 2.4rem;
+          border-radius: 10px;
+          transition: 0.1s;
+          &:hover{
+            transition: 0.1s;
+            border-radius: 10px;
+          }
+          img {
+            width: 2.4rem;
+            height: 2.4rem;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 10px;
+            transition: 0.1s;
+          }
+        }
+      }
+    }
+  }
+}
+.homePost{
+  .card-body{
+    .input-group{
+      input{
+        border: none;
+        font-size: 14px;
+        box-shadow: none;
+        outline: none;
+      }
+      button{
+        border-radius: 10px !important;
+        font-size: 14px;
+      }
+    }
+  }
+}
+.story{
+  .card{
+    width: 118px;
+    height: 190px;
+    border-radius: 15px;
+    font-size: 14px;
+    img {
+      width: 118px;
+      height: 190px;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 10px;
+      border-radius: 15px;
+    }
+    .card-img-overlay{
+      background: rgba(17, 17, 17, 0.533);
+      border-radius: 15px;
+      .avatar {
+        cursor: pointer;
+        width: 2.4rem;
+        height: 2.4rem;
+        border-radius: 10px;
+        transition: 0.1s;
+        img {
+          width: 2.4rem;
+          height: 2.4rem;
+          object-fit: cover;
+          object-position: top;
+          border-radius: 10px;
+          transition: 0.1s;
+          border: 2px solid #fff;
+        }
+      }
+    }
+  }
 }

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import postFeed from './../util/post.json'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import user from './../assets/post/dw.jpg'
 import { 
   Container,
   Row,
@@ -15,17 +14,15 @@ import {
   HiEllipsisHorizontal,
   HiHeart,
   HiBookmark,
-  HiChatBubbleOvalLeft
+  HiChatBubbleOvalLeft,
+  HiOutlineLink
 } from "react-icons/hi2";
-import { 
-  HiOutlineHome,
-  HiOutlineUser,
-  HiOutlinePhotograph,
-  HiOutlineNewspaper,
-  HiOutlineCog,
-  HiOutlineUserGroup
-} from "react-icons/hi";
-
+import { Menu } from '../components/Menu';
+import { Contact } from '../components/Contact';
+import { Requests } from '../components/Requests';
+import { MenuTop } from '../components/MenuTop';
+import { Story } from '../components/Story';
+import user from './../assets/post/dw.jpg'
 function Home() {
   const [postFeeds, setpostFeeds] = useState ([]);
   useEffect(() => {    
@@ -36,35 +33,28 @@ function Home() {
     await setpostFeeds(postFeed.post)
   }
   return <main className='feed_new'>
-    <section>
+    <MenuTop/>
+    <section className='mt-5'>
       <Container className='pt-5 pb-5'>
         <Row className='justify-content-center'>
         <Col lg={2} className='cardsFreed'>
           <div className="position-sticky">
-          <Card className='mb-3'>
-            <Card.Body className='d-flex'>
-              <div className="avatar">
-                <img src={user} alt="" />
-              </div>
-              <div className="nameUser ms-2">
-                <div className='nameText'><b>Belle Delphine</b></div>
-                <div className='timeData'><b>@belledelphine</b></div>
-              </div>
-            </Card.Body>
-          </Card>
-          <Card className='mb-3 cardButtonsMenu'>
-            <Card.Body className='d-grid'>
-              <Button variant="light"><HiOutlineHome className='icon-btn'/> Home</Button>
-              <Button variant="light"><HiOutlineUserGroup className='icon-btn'/> People</Button>
-              <Button variant="light"><HiOutlinePhotograph className='icon-btn'/> Photos</Button>
-              <Button variant="light" className='active'><HiOutlineNewspaper className='icon-btn'/> News Feed</Button>
-              <Button variant="light"><HiOutlineUser className='icon-btn'/> Profile</Button>
-              <Button variant="light"><HiOutlineCog className='icon-btn'/> Settin</Button>
-            </Card.Body>
-          </Card>
+            <Menu/>
           </div>
         </Col>
           <Col lg={5}>
+            <Story/>
+            <Card className='mb-3 homePost'>
+              <Card.Body>
+              <div class="input-group">
+              <div className="avatar">
+                 <img src={user} className='img-fluid'/>
+                </div>
+                <input type="text" class="form-control" placeholder="Username"/>
+                <Button><HiOutlineLink/> Post It!</Button>
+              </div>
+              </Card.Body>
+            </Card>
           {
               postFeeds?.map(post => (
                 <Card className='mb-4'>
@@ -83,9 +73,8 @@ function Home() {
                       <Dropdown.Toggle>
                         <HiEllipsisHorizontal/>
                       </Dropdown.Toggle>
-
                       <Dropdown.Menu className='shadow-sm'>
-                        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                        <Dropdown.Item href="#/action-1">Denuciar</Dropdown.Item>
                         <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
                         <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
                       </Dropdown.Menu>
@@ -141,10 +130,11 @@ function Home() {
               ))
             }
           </Col>
-          <Col lg={3}>
-          <Card>
-            <Card.Body>2</Card.Body>
-          </Card>
+          <Col lg={3} className='requests'>
+          <Requests/>
+          <div className="position-sticky">
+            <Contact/>
+          </div>
         </Col>
         </Row>
       </Container>

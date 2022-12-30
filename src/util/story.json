@@ -1,0 +1,24 @@
+{
+  "story":[
+    {
+      "id": 1,
+      "avatar": "https://i.pinimg.com/564x/80/a5/42/80a542756a94efb4df171ca6003d7e67.jpg",
+      "img": "https://i.pinimg.com/564x/80/a5/42/80a542756a94efb4df171ca6003d7e67.jpg"
+    },
+    {
+      "id": 1,
+      "avatar": "https://i.pinimg.com/564x/fd/97/60/fd976053ad0977b8b92114820bd2215d.jpg",
+      "img": "https://i.pinimg.com/564x/58/88/cf/5888cf23136edc985c5551d4753a0d0c.jpg"
+    },
+    {
+      "id": 1,
+      "avatar": "https://www.traveloffpath.com/wp-content/uploads/2022/06/traveler-Bali.jpg.webp",
+      "img": "https://i.pinimg.com/564x/1f/84/86/1f84864c727a6f0c0c3ab4f202dc099d.jpg"
+    },
+    {
+      "id": 1,
+      "avatar": "https://i.pinimg.com/564x/84/81/d5/8481d55771c393b62d24a2d46eb63b02.jpg",
+      "img": "https://i.pinimg.com/564x/6c/b7/8b/6cb78b65f21c1e3b6814fe943bb142db.jpg"
+    }
+  ]
+}
